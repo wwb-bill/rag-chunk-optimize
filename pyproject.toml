@@ -1,0 +1,19 @@
+[project]
+name = "rag-chunk-optimize"
+version = "0.1.0"
+description = "Auto-find optimal RAG chunking parameters"
+authors = [{ name = "wwb-bill" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+rag-chunk-optimize = "rag_chunk_optimize.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["rag_chunk_optimize*"]
